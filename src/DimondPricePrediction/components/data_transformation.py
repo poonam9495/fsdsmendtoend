@@ -24,10 +24,12 @@ class DataTransformationConfig:
 
 class DataTransformation:
     def __init__(self):
-        pass
+         self.data_transformation_config=DataTransformationConfig()
+
+        
     
     
-    def get_Data_Transformation(self):
+    def get_data_transformation(self):
         
         try:
             logging.info('Data Transformation initiated')
@@ -106,6 +108,8 @@ class DataTransformation:
             test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
 
             save_object(
+                
+                
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessing_obj
             )
