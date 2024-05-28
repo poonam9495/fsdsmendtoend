@@ -10,12 +10,11 @@ class PredictPipeline:
     def __init__(self):
         pass
     
-class PredictPipeline:
-    def __init__(self):
-        pass
     
-def predict(self,features):
+    def predict(self,features):
+        
         try:
+            
             preprocessor_path=os.path.join("artifacts","preprocessor.pkl")
             model_path=os.path.join("artifacts","model.pkl")
             
