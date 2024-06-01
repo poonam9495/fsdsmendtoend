@@ -4,4 +4,4 @@ numpy
 seaborn
 -e .
 Flask
-
+mlflow
